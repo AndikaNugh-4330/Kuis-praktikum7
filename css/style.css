@@ -21,7 +21,10 @@ body{
     width: 320px;
     background-color: #F6F6F6;
     border-radius: 30px;
-
+}
+.darkmodebg{
+    background-color: #22252D;
+    
 }
 .container-head{
     display: flex;
@@ -39,6 +42,9 @@ body{
     background: #F9F9F9;
     border-radius: 50px;
 }
+.headdark{
+    background: #292D36;
+}
 .container-display{
     display: flex;
     position: relative;
@@ -54,14 +60,19 @@ body{
     margin-right: 50px;
     opacity: 0.5;
 }
-.result-item{
+.history-item-dark{
+    color:  #F7F7F7 ;
+}
+#result-item{
     position: relative;
     float: right;
     font-size: 45px;
     font-family: noto sans;
     margin-right: 50px;
     margin-top: 15px;
-
+}
+.result-item-dark{
+    color: #F7F7F7;
 }
 
 .background-operator{
@@ -71,6 +82,9 @@ body{
     align-items: center;
     background-color: #F9F9F9;
     border-radius: 30px 30px 30px 30px;
+}
+.background-operator-dark{
+    background-color: #1E1E1E;
 }
 .container-operator{
     display: grid;
@@ -88,8 +102,13 @@ body{
     align-items: center;
     font-family: Roboto;
     font-size: 16px;
+    border: none;
 }
-.sun{
+.shapedark{
+    background-color: #272B33;
+    color: #F7F7F7;
+}
+.buttonMove{
     background-color: rgba(252, 184, 45, 25%) ;
     height: 24px;
     width: 24px;
@@ -97,6 +116,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    right: 3px;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+}
+.active{
+    transform: translateX(-125%);
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 #icon-moon{
     height: 12.95px;
@@ -104,15 +131,19 @@ body{
     margin-left: 5px;
 }
 #icon-sun{
-    position: absolute;
     z-index: 1;
     width: 15.95px;
     height: 15.95px;
 }
-#icon-undo{
-    height: 16.47px;
-    width: 14px;
+#undo{
+    height: 20px;
+    width:  18px;
+    
 }
+.undo-dark{
+    fill: #ff0000;
+}
+
 .co{
     color: #FCB82D;
 }
